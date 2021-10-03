@@ -1,0 +1,32 @@
+{
+    "name": "microbit-i2c2",
+    "version": "0.0.01",
+    "description": "Pin Configurable I2C Port 2",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "i2c2.ts",
+        "i2c2.cpp",
+        "shims.d.ts",
+        "enums.d.ts",
+        "pxtparts.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "authors": [
+        "Bill Siever <bsiever@gmail.com>"
+    ],
+    "card": {
+        "name": "Pinconfigurable I2C",
+        "feedbackUrl": "http://siever.info"
+    }
+}
