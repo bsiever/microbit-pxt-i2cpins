@@ -1,5 +1,5 @@
 {
-    "name": "microbit-i2c2",
+    "name": "microbit-pxt-i2cpins",
     "version": "0.0.01",
     "description": "Pin Configurable I2C Port 2",
     "license": "MIT",
@@ -11,8 +11,7 @@
         "i2c2.ts",
         "i2c2.cpp",
         "shims.d.ts",
-        "enums.d.ts",
-        "pxtparts.json"
+        "enums.d.ts"
     ],
     "testFiles": [
         "test.ts"
