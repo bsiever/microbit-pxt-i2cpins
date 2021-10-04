@@ -12,11 +12,6 @@
 */
 
 #include "pxt.h"
-#include <cstdint>
-#include <math.h>
-#include "app_error.h"
-#include "nrf.h"
-#include "MicroBitSystemTimer.h"
 
 
 // Enable debugging: Debugging uses #ifdefs, so uncomment or comment out 
@@ -25,15 +20,15 @@
 using namespace pxt;
 
 
-#if MICROBIT_CODAL
-// V2
-#else
-// V1
-#endif
+// #if MICROBIT_CODAL
+// // V2
+// #else
+// // V1
+// #endif
 
 
-#ifdef DEBUG
-#endif
+// #ifdef DEBUG
+// #endif
 
 namespace pins { 
 

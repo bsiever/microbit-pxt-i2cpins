@@ -1,6 +1,3 @@
-//% color=#00007F 
-//% icon="\uf6ff"
-//% block="I2C 2"
 namespace pins {
 
     //% blockId="setI2CPins" block="set i2c data to %sda and clock to %scl|"
