@@ -14,7 +14,7 @@
      * Distributed as-is; no warranty is given.
      */
 
-declare namespace i2c2 {
+declare namespace pins {
 }
 
 // Auto-generated. Do not edit. Really.

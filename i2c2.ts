@@ -1,19 +1,12 @@
- //% color=#0000FF 
-//% icon="\uf2c8"
+//% color=#00007F 
+//% icon="\uf6ff"
 //% block="I2C 2"
-namespace dstemp {
-    // //% whenUsed
-    // let errorHandler:Action = null;
-    // //% whenUsed
-    // let errorObjectIdx : number = 0;
-    // //% whenUsed
-    // let errorPort : number = -1;
+namespace pins {
 
-    // //% blockId="celsius" block="temperature (\u00B0\\C) on %pin|"
-    // //% shim=dstemp::celsius
-    // //% parts=dstemp trackArgs=0
-    // export function celsius(pin: DigitalPin) : number {
-    //     return 32.6;
-    // }
+    //% blockId="setI2CPins" block="set i2c data to %sda and clock to %scl|"
+    //% shim=pins::setI2CPins
+    //% parts=dstemp trackArgs=0
+    export function setI2CPins(sda : DigitalPin,  scl : DigitalPin) : void {
+    }
 
 }

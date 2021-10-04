@@ -26,7 +26,7 @@
         "Bill Siever <bsiever@gmail.com>"
     ],
     "card": {
-        "name": "Pinconfigurable I2C",
+        "name": "Pin configurable I2C",
         "feedbackUrl": "http://siever.info"
     }
 }
