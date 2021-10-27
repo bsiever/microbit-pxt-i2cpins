@@ -1,6 +1,6 @@
 
 //% color=#0000FF 
-//% icon="\uf2c8"
+//% icon="\uf074"
 //% block="i2c Reroute"
 namespace i2crr {
     //% blockId="setI2CPins" block="set i2c data to %sda and clock to %scl|"
