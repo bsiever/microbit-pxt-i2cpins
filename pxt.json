@@ -1,15 +1,15 @@
 {
     "name": "microbit-pxt-i2cpins",
     "version": "0.0.01",
-    "description": "Pin Configurable I2C Port 2",
+    "description": "Reroute External I2C Pins",
     "license": "MIT",
     "dependencies": {
         "core": "*"
     },
     "files": [
         "README.md",
-        "i2c2.ts",
-        "i2c2.cpp",
+        "i2crr.ts",
+        "i2crr.cpp",
         "shims.d.ts",
         "enums.d.ts"
     ],
@@ -25,7 +25,7 @@
         "Bill Siever <bsiever@gmail.com>"
     ],
     "card": {
-        "name": "Pin configurable I2C",
+        "name": "Reroute External I2C pins",
         "feedbackUrl": "http://siever.info"
     }
 }

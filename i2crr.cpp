@@ -21,7 +21,7 @@
 
 using namespace pxt;
 
-namespace pins { 
+namespace i2crr { 
     //%
     void setI2CPins(int sdaPin, int sclPin) {
 #if MICROBIT_CODAL

@@ -3,7 +3,7 @@ serial.writeLine("Press A to configure pins (P1=SDA, P2=SCL) and write a number"
 serial.writeLine("Press B to write a number")
 // serial.writeLine("If sensor is NOT connected it should show -Infinity (for temp) and an error message")
 input.onButtonPressed(Button.A, function () {
-    pins.setI2CPins(DigitalPin.P1, DigitalPin.P2)
+    i2crr.setI2CPins(DigitalPin.P1, DigitalPin.P2)
     pins.i2cWriteNumber(
     104,
     107,

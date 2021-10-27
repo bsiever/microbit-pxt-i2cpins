@@ -14,7 +14,7 @@
      * Distributed as-is; no warranty is given.
      */
 
-declare namespace pins {
+declare namespace i2crr {
 }
 
 // Auto-generated. Do not edit. Really.
