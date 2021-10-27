@@ -77,11 +77,11 @@ namespace pins {
         loopUntilSent("allocing\n");
 
 //        new (&uBit.i2c) MicroBitI2C(sda, scl);
-       //new (&uBit.i2c) MicroBitI2C(uBit.io.P20, uBit.io.P19);
+       new (&uBit.i2c) MicroBitI2C(uBit.io.P1, uBit.io.P2);
         // Creating a new object causes the crash....
         // NOTE: Hard coded, not   The below are "NRF52Pin" objects
 //      MicroBitI2C *i2c2 = new MicroBitI2C(sda, scl);
-      MicroBitI2C *i2c2 = new MicroBitI2C(uBit.io.P1, uBit.io.P2);
+    //  MicroBitI2C *i2c2 = new MicroBitI2C(uBit.io.P1, uBit.io.P2);
       
          loopUntilSent("write\n");
 
@@ -91,7 +91,7 @@ namespace pins {
      //MicroBitI2C *i2c2 = new MicroBitI2C(sda, scl);
         loopUntilSent("done\n");
 
-    memcpy(&uBit.i2c, i2c2, sizeof(MicroBitI2C));
+    //memcpy(&uBit.i2c, i2c2, sizeof(MicroBitI2C));
         loopUntilSent("copied\n");
 
 #else
