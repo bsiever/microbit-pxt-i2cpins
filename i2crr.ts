@@ -8,5 +8,7 @@ namespace i2crr {
     //% shim=i2crr::setI2CPins
     //% sdaPin.defl=DigitalPin.P1 sclPin.defl=DigitalPin.P2
     export function setI2CPins(sdaPin : DigitalPin,  sclPin : DigitalPin) : void {
+        // Per https://github.com/microsoft/pxt-microbit/issues/4292
+        0;
     }
 }
