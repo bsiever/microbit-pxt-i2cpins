@@ -18,5 +18,7 @@ Set the Data and Clock pins.
 
 Development of this extension was sponsored by [MakeKit](https://www.makekit.no/).
 
+Icon based on [Font Awesome icon 0xF074](https://www.iconfinder.com/icons/213043/f074_icon) SVG.
+
 <script src="https://makecode.com/gh-pages-embed.js"></script>
 <script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>

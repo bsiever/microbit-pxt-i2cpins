@@ -33,6 +33,7 @@
     ],
     "card": {
         "name": "Reroute External I2C pins",
+        "imageUrl": "file:../icon.png",
         "feedbackUrl": "http://siever.info"
     }
 }
