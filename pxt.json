@@ -25,9 +25,6 @@
         "microbit"
     ],
     "preferredEditor": "tsprj",
-    "disablesVariants": [
-        "mbdal"
-    ],
     "authors": [
         "Bill Siever <bsiever@gmail.com>"
     ],

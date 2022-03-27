@@ -6,8 +6,8 @@ input.onButtonPressed(Button.A, function () {
     //               SDA          , SCL
     i2crr.setI2CPins(DigitalPin.P1, DigitalPin.P2)
     pins.i2cWriteNumber(
-    104,
-    107,
+    104,  // 0x68
+    107,  // 0x6C
     NumberFormat.UInt8LE,
     true
     )
@@ -35,4 +35,7 @@ input.onButtonPressed(Button.B, function () {
     serial.writeValue("y", pins.i2cReadNumber(104, NumberFormat.UInt8BE, true))
     serial.writeValue("z", pins.i2cReadNumber(104, NumberFormat.UInt8BE, true))
     serial.writeValue("t", pins.i2cReadNumber(104, NumberFormat.UInt8BE, false))
+    serial.writeValue("a", input.acceleration(Dimension.X))
+
+
 })
