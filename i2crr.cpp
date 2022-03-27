@@ -40,6 +40,18 @@ namespace i2crr {
        new (&uBit.i2c) MicroBitI2C(*sda, *scl);
 #else
         // V1 Not currently supported 
+        // destruct at old location
+        uBit.i2c.~MicroBitI2C(); 
+        // // Free associated peripherals
+        // // Peripherals are allocated starting from Max index (in allocate_peripheral in codal-nrf52's peripheral_alloc.cpp)
+        // // _i2c is initialized first, so it'll get NRF_SPIM1, leaving NRF_SPIM0 for i2c (external))
+        // free_alloc_peri(NRF_SPIM0);
+        // Get the pins to use
+        MicroBitPin *sda = getPin(sdaPin);
+        MicroBitPin *scl = getPin(sclPin);
+        // https://stackoverflow.com/questions/2166099/calling-a-constructor-to-re-initialize-object
+//       new (&uBit.i2c) MicroBitI2C(*sda, *scl);
+       new (&uBit.i2c) MicroBitI2C(sda->name, scl->name);
 #endif
     }
 }
