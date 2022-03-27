@@ -39,6 +39,7 @@ namespace i2crr {
         // https://stackoverflow.com/questions/2166099/calling-a-constructor-to-re-initialize-object
        new (&uBit.i2c) MicroBitI2C(*sda, *scl);
 #else
+        // V1
         // Only 1 TWI / I2C port.  Mutually exclusive with on-board periphs: Accelrometer/Magnetometer (compass)
         // destruct at old location
         uBit.i2c.~MicroBitI2C(); 

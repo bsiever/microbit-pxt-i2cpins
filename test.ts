@@ -36,6 +36,4 @@ input.onButtonPressed(Button.B, function () {
     serial.writeValue("z", pins.i2cReadNumber(104, NumberFormat.UInt8BE, true))
     serial.writeValue("t", pins.i2cReadNumber(104, NumberFormat.UInt8BE, false))
     serial.writeValue("a", input.acceleration(Dimension.X))
-
-
 })
