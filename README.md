@@ -4,7 +4,9 @@
 pins=github:bsiever/microbit-pxt-i2cpins
 ```
 
-This extension allows non-default pins to be used for the micro:bit version 2's excernal I2C. (**This extension only works on the micro:bit v2**)
+This extension allows non-default pins to be used for the micro:bit's I2C
+
+**Micro:bit v1 only has one I2C port. Changing the pins will prevent the accelerometer/compass from working!!!**
 
 # Setting the pins
 
