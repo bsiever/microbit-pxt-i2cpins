@@ -27,6 +27,7 @@ namespace i2crr {
     void setI2CPins(int sdaPin, int sclPin) {
 #if MICROBIT_CODAL
         // V2
+
         // destruct at old location
         uBit.i2c.~MicroBitI2C(); 
         // Free associated peripherals
